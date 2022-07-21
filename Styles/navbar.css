@@ -28,6 +28,8 @@ li {
     padding: 20px;
     background-color: #00b289;
     color: #fff;
+    position: sticky;
+    top: 0px;
 }
 
 .nav-links a{

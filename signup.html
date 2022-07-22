@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div{
+            width: 40%;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px 0px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            /* border: 1px solid red; */
+            border-radius: 20px; 
+        }
+        form {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 95%;
+            /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+            padding: 30px;
+        } 
+ 
+        label {
+            font-size: 20px;
+        } 
+        h2, p{
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        }
+
+        input[type="submit"] {
+        background-color: #00b289;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 20px;
+        }
+
+        input[type="submit"]:hover {
+        background-color: #3973b6;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Sign Up</h2>
+        <form action="">
+            <label for="">Full Name</label><br>
+            <input id="name" type="text" placeholder="Enter your full name"><br>
+
+            <label for="">Email</label><br>
+            <input type="email" name="" id="email" placeholder="Enter email"><br>
+
+            <label for="">Password</label><br>
+            <input type="password" name="" id="password" placeholder="Enter Password"><br>
+
+            <p>By signing up, I accept the bonsai <a target="_blank" href="https://masaischool.com/terms/">Terms of Service</a> and acknowlwdge the <a target="_blank" href="https://masaischool.com/privacy/">Privacy Policy.</a></p>
+            <input type="submit" value="SIGN UP">
+        </form>
+        <p>Already have an account? <a href="./signin.html">Sign In</a></p>
+    </div>
+</body>
+</html>
+
+<script>
+    let form = document.querySelector('form'), dataArr=JSON.parse(localStorage.getItem("data")) || [];
+    form.addEventListener("submit", function(){
+        event.preventDefault();
+        let obj={
+            name: document.querySelector('#name').value,
+            email: document.querySelector('#email').value,
+            password: document.querySelector('#password').value
+        };
+        dataArr.push(obj);
+        localStorage.setItem("data", JSON.stringify(dataArr));
+        alert("Signed up successfully! You are redirected to Sign In page, please enter the details to enter into your account.");
+        window.location.href = "login.html";
+    })
+</script>

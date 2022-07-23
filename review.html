@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="lowerSection.css">
+    <style>
+        #upperpart {
+            text-align: center;
+            padding: 100px;
+        }
+        #upperpart>h1 {
+            font-size: 50px;
+        }
+        #upperpart>h1+p {
+            font-size: 25px;
+        }
+        #container {
+            width: 95%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            background-color: #fff;
+        }
+        #container>div {
+            padding: 100px 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #container>div>p {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        #container>div>h2 {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+
+        <!-- LOGO -->
+        <div class="logo">bonsai</div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" name="" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li class="services">
+                    <a href="/">Product</a>
+                    <!-- DROPDOWN MENU -->
+                    <ul class="dropdown">
+                        <li><a href="/">Bonsai Workflow</a></li>
+                        <li><a href="./bonsaitax.html">Bonsai Tax</a></li>
+                        <li><a href="./bonsaicash.html">Bonsai Cash</a></li>
+                    </ul>
+                </li>
+                <li class="services">
+                    <a href="/">Templates</a>
+                    <!-- DROPDOWN MENU -->
+                    <ul class="dropdown">
+                        <li><a href="/">Contract Templates</a></li>
+                        <li><a href="/">ProposalTemplates</a></li>
+                        <li><a href="/">InvoiceTemplates</a></li>
+                        <li><a href="/">Agreement Templates</a></li>
+                        <li><a href="/">Quote Templates</a></li>
+                        <li><a href="/">Scope of Work Templates</a></li>
+                    </ul>
+                </li>
+                <li><a href="/">Pricing</a></li>
+                <li><a href="./review.html">Reviews</a></li>
+            </div>
+        </ul>
+        <div id="navbutton">
+            <a href="./signin.html"><button>LOG IN</button></a>
+            <a href="./signup.html"><button>START FREE</button></a>
+        </div> 
+    </nav>
+
+
+    <div id="upperpart">
+        <h1>Bonsai Reviews</h1>
+        <p>200,000+ Freelancers Love Bonsai. Here's why.</p>
+        <p>Last Updated April 21,2021</p>
+    </div>
+
+    <div id="container"></div>
+
+    <div id="lowerContainer">
+        <div>
+            <h4>PRODUCT</h4>
+            <div style="height: 30px;"></div>
+            <p>Proposals</p>
+            <p>Contracts</p>
+            <p>Invoicing</p>
+            <p>Client CRM</p>
+            <p>Time Tracking</p>
+            <p>Task Tracking</p>
+            <p>Forms</p>
+            <p>Accounting</p>
+            <p>Bonsai Tax</p>
+            <p>Bonsai Cash</p>
+            <div style="height: 10px;"></div>
+            <p>Pricing</p>
+            <p>Bonsai Reviews</p>
+        </div>
+        <div>
+            <h4>FREE RESOURCES</h4>
+            <div style="height: 10px;"></div>
+            <p>Freelance Resources</p>
+            <p>Freelance Blog by Bonsai</p>
+            <p>How to Write a Contract</p>
+            <p>Online Signature Maker</p>
+            <div style="height: 5px;"></div>
+            <p>Self-Employed Taxes Hub</p>
+            <p>Self-Employed Tax Calculator</p>
+            <p>Self-Employed Tax Deductions</p>
+            <h4>Templates</h4>
+            <button class="accordion">Invoice Templates</button>
+            <div class="panel">
+                <p>Invoice Generator</p>
+                <p>Blank Invoice Template</p>
+                <p>Consultant Invoice Template</p>
+                <p>Editable Invoice Template</p>
+                <p>Graphic Design Invoice</p>
+                <p>Web Design Invoice</p>
+                <p>Contractor Invoice Template</p>
+                <p>Photography Invoice Template</p>
+                <p>Self Employed Invoice Template</p>
+            </div>
+            <button class="accordion">Proposal Templates</button>
+            <div class="panel">
+                <p>Website Proposal Template</p>
+                <p>Digital Marketing Proposal Template</p>
+                <p>Social Media Marketing Proposal</p>
+                <p>Graphic Design Proposal</p>
+                <p>Freelance Proposal Template</p>
+                <p>SEO Proposal Template</p>
+            </div>
+
+            <button class="accordion">Contract Templates</button>
+            <div class="panel">
+                <p>Online Contract</p>
+                <p>Graphic Design Contract</p>
+                <p>Freelance Contract Template</p>
+                <p>Social Media Marketing Contract</p>
+                <p>Software Development Contract</p>
+                <p>Web Design Contract</p>
+                <p>Video Production Contract</p>
+                <p>Public Relations Contract</p>
+                <p>Translation Contract</p>
+            </div>
+            
+            <button class="accordion">Agreement Templates</button>
+            <div class="panel">
+                <p>Retainer Agreement Template</p>
+                <p>Influencer Agreement Template</p>
+                <p>Collaboration Agreement Template</p>
+                <p>Software Development Agreement</p>
+                <p>Marketing Agreement Template</p>
+            </div>
+           
+            <button class="accordion">Scope of Work Templates</button>
+            <div class="panel">
+                <p>Website Development Scope of Work</p>
+                <p>Digital Marketing Scope of Work</p>
+                <p>Consultant Statement of Work Template</p>
+                <p>Software Development Scope of Work</p>
+            </div>
+
+            <button class="accordion">Quote Templates</button>
+            <div class="panel">
+                <p>Freelance Quotation Template</p>
+                <p>Web Design Quotation Template</p>
+                <p>Graphic Design Quotation Template</p>
+                <p>Interior Design Quotation Template</p>
+                <p>Video Production Quotation Template</p>
+                <p>Social Media Marketing Quotation</p>
+            </div>
+            <p>Credit Note Templates</p>
+            <p>Estimate Templates</p>
+        </div>
+        <div>
+            <h4>BONSAI</h4>
+            <div style="height: 1px;"></div>
+            <p>About</p>
+            <p>Careers</p>
+            <p>Support</p>
+            <p>LinkedIn</p>
+            <p>Twitter</p>
+            <p>Privacy policy</p>
+            <p>Legal</p>
+            <p>Affiliates</p>
+            <p>Write for Us</p>
+            <button class="accordion">Comparisons</button>
+            <div class="panel">
+                <p>Freshbooks Alternatives</p>
+                <p>Quickbooks Alternatives</p>
+                <p>Wave vs Quickbooks</p>
+                <p>Xero vs Quickbooks</p>
+                <p>Freshbooks vs Quickbooks</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./lowerSection.js"></script>
+</html>
+
+<script>
+    let ReviewPageData = [
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"Bonsai takes all the stress out of running a business. It helps me look professional, does all the hard work, and lets me focus on the aspects of my business that I love. Thanks, Bonsai!\"",
+        "name": "Hannah Walker"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"Using Bonsai has been the single best decision I made in streamlining my freelance business. I’ve been able to better manage proposals and contracts, and with the ability to have clients cover payment processing fees, my profits have increased. Bonsai has been a big win!\"",
+        "name": "Ash Blankenship"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"Bonsai is one of my favorite tools for managing my business. I can send my clients proposals, contracts, and invoices all in one tool. Plus I use it to track time for hourly projects. Takes the headache out of managing my business & clients!\"",
+        "name": "Lara Jordan"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "Bonsai is the freelancer's Swiss Army knife! Everything I need for managing my clients is right at my fingertips.",
+        "name": "Nancy Little"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"I found Bonsai the moment I needed a tool to submit a proposal to a client. The app has tracked entire projects from proposal to contract and invoicing, and I can't imagine running my business without it.\"",
+        "name": "Tawny Barbarick"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"Bonsai is the best service for freelancers. The legal finesse of contracts is pretty rad & has saved me in sticky client situations. Automatic invoicing and invoicing follow-up messages/reminders are just awesome. I don't have the patience for that but I also like to get paid.\"",
+        "name": "Becca McCarty"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"I use Bonsai in my copywriting business every day. It's an excellent, straightforward, and user-friendly hub for my proposals, contracts, and invoicing, and my clients really seem to enjoy the portal that keeps track of tasks and hours worked. The team is so easy to work with and are quick to answer questions and implement suggestions. I recommend Bonsai to everyone who asks!\"",
+        "name": "Maggie Tyson"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"Bonsai has been a game changer for my small business. Being able to send proposals, contracts, and invoices all in the same system is a life saver!! There's no way I could have created and organized all of those documents without losing my sanity or letting something fall through the cracks. Thank you Bonsai!\"",
+        "name": "Alix Kalfin"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"As a freelancer, I was recently burned by a client who refused to pay me for two months of very hard work done. After having to hire an attorney, I realized I needed a way to have stronger contracts with my clients. Bonsai helped me with that and so much more. Bonsai is my new favorite platform to help make my life easier: resourceful, easy to understand, aids in organization, and provides some protection for myself and my clients.\"",
+        "name": "Caitlin Davis"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"Being self-employed is incredibly difficult, but Bonsai took the guesswork out of managing proposals, contracts, and invoicing.  I have saved countless hours using Bonsai and I would recommend it to any freelancer looking to simplify their workflows and focus more time and energy where you need it most, on your customers.\"",
+        "name": "Matthew Dunn"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"Bonsai is smart, simple and secure! It's amazing how much less you have to worry about boring (but important) paperwork and you get to focus on the actual project, especially for young freelancers with less experience.\"",
+        "name": "Uchechukwu Onyeka"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"I'm not sure what I did before Bonsai. It already does so much and the Bonsai team is always adding new features to make it even more useful. Sending proposals, writing contracts, and creating invoices has never been easier. It's totally worth the monthly fee for the peace of mind it provides.\"",
+        "name": "Elizabeth Jones"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"I adore Bonsai for its aesthetics, customization and flow. It’s so design conscious, responsive, clean, intuitive and I love that I now have the ability to send beautiful invoices that really reflect my brand. Unlike some of the clunky accounting tools I’ve used in the past. Plus it’s so easy to use. Clients often comment: LOVE IT!! Thank you.\"",
+        "name": "Louise O'Kane"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"Bonsai is my favorite tool for my freelance business. It allows me to stay organized with projects and invoices, and Bonsai is always coming out with new features to make their tools even easier to use.\"",
+        "name": "Karlie Jones"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"I love using Bonsai, specifically for contracts. There's no printing, scanning and illegible handwriting. Just a smooth process that allows me to get started on a project sooner rather than later and makes me look professional to my clients. I can create my own or use the templates that have already been created, which has saved me so much time and hassle.\"",
+        "name": "Claire Brooks"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"I'm new to freelancing and Bonsai has made the transition so much easier. It made me and my biz more professional instantly.\"",
+        "name": "Amanda Larson"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"Speaking of @bonsaiinc , I need to take a minute and say how pleased I am with them! I briefly debated leaving them for another provider, but promptly returned. Bonsaii makes creating proposals, contracts, time tracking, and invoices a breeze!\"",
+        "name": "Cheril Clarke"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"The folks at @bonsaiinc just made my day. They're definitely committed to #freelancers - even during these crazy, challenging times. Amazing is what I have to say about the company and their service! Check them out!\"",
+        "name": "Katie Schenk"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"Really glad I made the switch @bonsaiinc about a year ago. They are ON these features and updates, you hear me?!?!\"",
+        "name": "Ariana Farquharson"
+    },
+    {
+        "img_url": "https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg",
+        "para": "\"Just wanted to give a shoutout to Matt and the team at @bonsaiinc for the best customer service (more specifically, from a CEO) that I’ve had in a long time. I will be upgrading my plan for sure post-pandemic. Bravo\"",
+        "name": "Helena Lowe"
+    }
+]
+
+    ReviewPageData.forEach(function(el){
+        let div = document.createElement('div');
+        let img = document.createElement('img');
+        let p = document.createElement('p');
+        let name = document.createElement('h2');
+
+        img.src = el.img_url;
+        p.innerText = el.para;
+        name.innerText = el.name;
+
+        div.append(img, p, name);
+
+        document.querySelector('#container').append(div);
+    })
+</script>

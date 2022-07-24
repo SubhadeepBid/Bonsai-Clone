@@ -7,6 +7,14 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+#lowerContainer h4 {
+  line-height: 50px;
+}
+
+#lowerContainer p {
+  line-height: 30px;
+}
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;

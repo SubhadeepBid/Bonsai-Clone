@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Styles/navbar.css">
-    <link rel="stylesheet" href="./Styles/style.css">
     <link rel="stylesheet" href="./Styles/lowerSection.css">
+    <link rel="stylesheet" href="./Styles/hellobonsai.css">
+    <link rel="stylesheet" href="./Styles/hoverabletabs.css">
 </head>
 <body>
     <nav class="navbar">
@@ -52,72 +53,104 @@
             <a href="./signup.html"><button>START FREE</button></a>
         </div> 
     </nav>
-    
+
     <div id="container">
         <div>
             <div>
-                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c8e88feb67d_time-tracking%20colour.svg" alt="">
-                <p>Time Tracking</p>
+                <img src="" alt="">
+                <p></p>
             </div>
-            <h1>The robust time tracker made for your workflow.</h1>
-            <p>Manage your hours with ease with an all-in-one time tracker, timesheets and billing system.</p>
+            <h1>Everything you need to run your freelance business.</h1>
+            <p>Bonsai’s all-in-one product suite with smart automation lets you focus on your passion, not your paperwork.</p>
             <input type="email" name="" id="email" placeholder="Enter your email"><input type="submit" value="START FREE">
         </div>
         <div>
-            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e6bbbc1e37d0b57e90a317c_time-tracking-img-min-p-800.png" alt="">
+            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/60dc499268d597166db997aa_bonsai_hero-opt-2.png" alt="">
         </div>
     </div>
 
-    <div id="onlinecontract">
+    <div id="makeMore">
+        <h2>Make more, manage less</h2>
+        <p>Bonsai integrates and automates every step of your business so it runs seamlessly - from proposal to tax season.</p>
+    </div>
+
+    <div id="makeMore2">
         <div>
-            <h2>A fully-featured time tracker that’s built specifically for <span>online contract</span> work and invoicing clients.</h2>
+            <h2>Without Bonsai</h2>
+            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c6c51feb665_ill_before_2n%20block.svg" alt="">
         </div>
         <div>
-            <div>
-                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fde3f8e28c14c3d1e8b33_ill_Easily%20Billable.svg" alt="">
-                <h3>Easily Billable</h3>
-                <p>Set an hourly rate per-project for tracking time and automatically invoicing the completed timesheet.</p>
-            </div>
-            <div>
-                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fde3f8e28c1031b1e8b34_ill_Project-Based.svg" alt="">
-                <h3>Project-Based</h3>
-                <p>Track time on projects with your collaborators and see how many hours still need to be billed.</p>
-            </div>
-            <div>
-                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fde3f8e28c122ac1e8b35_ill_Cross-Platform.svg" alt="">
-                <h3>Cross-Platform</h3>
-                <p>Use the Bonsai time tracker on the web, mobile apps, macOS app and Chrome Extension.</p>
-            </div>
+            <h2>With Bonsai</h2>
+            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c9ed8feb675_ill_after_2nd%20block.svg" alt="">
         </div>
     </div>
 
-    <div id="invoicehours">
-        <div>
-            <h2>Invoice Hours</h2>
-            <p>Set a project’s hourly rate, start tracking time and bill time to your client with a click. Round the time up to make the billing even smoother.</p>
+    <div id="box">
+        <div class="tab">
+            <button id="initial" class="tablinks" onmouseover="openTab(event, 'A')">Proposals</button>
+            <button class="tablinks" onmouseover="openTab(event, 'B')">Contracts</button>
+            <button class="tablinks" onmouseover="openTab(event, 'C')">Projects & Client CRM</button>
+            <button class="tablinks" onmouseover="openTab(event, 'D')">Time Tracking</button>
+            <button class="tablinks" onmouseover="openTab(event, 'E')">Invoices</button>
+            <button class="tablinks" onmouseover="openTab(event, 'F')">Task Management</button>
+            <button class="tablinks" onmouseover="openTab(event, 'G')">Accounting & Taxes</button>
+            <button class="tablinks" onmouseover="openTab(event, 'H')">Forms</button>
         </div>
-        <div>
-            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e6bc77f7724a02f0a97e5e1_create%20an%20invoice-min%20(2)-p-500.png" alt="">
+    
+        <div id="A" class="tabcontent">
+            <h1>Win More Work</h1>
+            <p>With just a few clicks, you can craft structured proposals with clear estimates to close your deals faster.</p>
+            <p>EXPLORE PROPOSALS</p>
+            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050acdd031b9f58db100f72_Graphic_Proposal-opt.png" alt="">
         </div>
-    </div>
+    
+        <div id="B" class="tabcontent">
+            <h1>Protect Your Business</h1>
+            <p>Simply answer a few questions to generate an already vetted contract template. Once you hit send, the contract can be e-signed in minutes.</p>
+            <p>EXPLORE CONTRACTS</p>
+            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050ad775d1c278c443c76d6_Graphic_Contact-opt.png" alt="">
+        </div>
+    
+        <div id="C" class="tabcontent">
+            <h1>Stay Organized</h1>
+            <p>Manage your clients and ongoing projects all in one place. Organize all the documents, files and payments together for you and your client.</p>
+            <p>EXPLORE PROJECTS</p>
+            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c5ad3feb65b_Graphic_Projects-min.png" alt="">
+        </div>
+        
+        <div id="D" class="tabcontent">
+            <h1>Keep It Simple</h1>
+            <p>Easily track the time you're working, automatically populate timesheets and seamlessly switch between your projects for the day.</p>
+            <p>EXPLORE TIME TRACKING</p>
+            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c4dc9feb654_Graphic_Track%20time-min.png" alt="">
+        </div>
+        
+        <div id="E" class="tabcontent">
+            <h1>Get Paid Faster</h1>
+            <p>Create and customize invoices, receive updates about payment timelines, and have automatic payment reminders sent on your behalf.</p>
+            <p>EXPLORE INVOICES</p>
+            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/60241fc5e974b72f0865513b_Graphic_Invoice-min.png" alt="">
+        </div>
+        
+        <div id="F" class="tabcontent">
+            <h1>Be More Effective</h1>
+            <p>Give your day more structure with simple task management on your projects. Track time for each task and stay up-to-date.</p>
+            <p>EXPLORE TASKS</p>
+            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050aec11e1747965bfc16a5_task-management-graphic-opt.png" alt="">
+        </div>
+        
+        <div id="G" class="tabcontent">
+            <h1>Automate Your Finances</h1>
+            <p>Don't worry about freelance finances when you have automatic expense tracking, income reporting and estimated tax planning.</p>
+            <p>EXPLORE ACCOUNTING & TAXES</p>
+            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050af07c36c35952ad19fbe_Graphic_Accounting-opt.png" alt="">
+        </div>
 
-    <div id="centralizetimesheets">
-        <div>
-            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e6bc8038569d7612605c001_invoice%20timesheet-min.png" alt="">
-        </div>
-        <div>
-            <h2>Centralize Timesheets</h2>
-            <p>Whether you’re tracking time as a team on a project or working solo, you can keep all your project’s timesheets in the same place to see the hours billed and to-be paid.</p>
-        </div>
-    </div>
-
-    <div id="useitanywhere">
-        <div>
-            <h2>Use It Anywhere</h2>
-            <p>Download the app on iOS, Android, Mac and Chrome so the time tracker works the way you do. Use a time tracker that supports your workflow.</p>
-        </div>
-        <div>
-            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e6bc84f8569d7c4cc05c0a2_timer%20graphic-min.png" alt="">
+        <div id="H" class="tabcontent">
+            <h1>Ask Your Clients</h1>
+            <p>Create your own customized forms and questionnaires for clients and kicking off new projects</p>
+            <p>EXPLORE FORMS</p>
+            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050af50cd2ff1fc7708d532_home-forms-opt.png" alt="">
         </div>
     </div>
 
@@ -142,46 +175,14 @@
     <div id="simplify">
         <div>
             <div>
-                <h1>Simplify your workflow with Bonsai time tracking.</h1>
+                <h1>It’s your business.</h1>
+                <h1>We’re here to help it grow.</h1>
             </div>
             <div>
                 <button><a style="color: white;" href="./signup.html">START FREE</a></button>
             </div>
         </div>
-        <div>
-            <div>
-                <p>Available for download on the most popular platforms:</p>
-            </div>
-            <div>
-                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fde3f8e28c145b81e8b36_chrome.svg" alt=""><img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fde3f8e28c12aac1e8b37_ios.svg" alt=""><img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fde3f8e28c141b51e8b38_android.svg" alt="">
-            </div>
-        </div>
-    </div>
-    
-    <div id="bonsaifeatures">
-        <div>
-            <h2>Keep Exploring Bonsai’s Features</h2>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fdcff2a5865afca6505f5_Explore%20invoices.svg" alt="">
-                </div>
-                <div>
-                    <h4>Invoices</h4>
-                    <p>Get paid on time using smart invoicing with automatic reminders, read-receipts and a variety of payment options.</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fdcff2a586587ad6505f6_Explore%20task%20management.svg" alt="">
-                </div>
-                <div>
-                    <h4>Task Management</h4>
-                    <p>Stay on top of your ongoing tasks and todos with simple task creation, templating and due dates built right into your projects.</p>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
     <div id="lowerContainer">
@@ -194,7 +195,7 @@
             <p>Client CRM</p>
             <p>Time Tracking</p>
             <p>Task Tracking</p>
-            <p>Forms</p> 
+            <p>Forms</p>
             <p>Accounting</p>
             <p>Bonsai Tax</p>
             <p>Bonsai Cash</p>
@@ -301,5 +302,6 @@
         </div>
     </div>
 </body>
+<script src="./Scripts/hoverabletabs.js"></script>
 <script src="./Scripts/lowerSection.js"></script>
 </html>

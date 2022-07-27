@@ -8,7 +8,7 @@
     margin-top: 100px;
 }
 
-.superchargediv {
+.superchargediv { 
     width: 70%;
     margin: auto;
     display: grid;
@@ -44,10 +44,19 @@
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
+#plans-2>div h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
 #plans-2>div>hr {
     color: #00b289;
     border: 2px solid;
     background-color: #00b289;
+}
+
+#plans-2>div>p {
+    line-height: 30px;
 }
 
 .glyphicon {
@@ -60,10 +69,11 @@
     border: none;
     background-color: #00b289;
     color: white;
+    margin-top: 20px;
 }
 
 #plans-2>div:nth-child(1)>button, #plans-2>div:nth-child(2)>button {
-    margin-top: 60px;
+    margin-top: 140px;
 }
 
 #plans-2>div>h1>span {
@@ -74,4 +84,13 @@
 #FAQ {
     text-align: center;
     margin-top: 100px;
+}
+
+.panel>p {
+    width: 60%;
+    margin: auto;
+}
+
+#FAQ>h2+button {
+    margin-top: 40px;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pricing</title>
     <link rel="stylesheet" href="./Styles/navbar.css">
     <link rel="stylesheet" href="./Styles/lowerSection.css">
     <link rel="stylesheet" href="./Styles/pricing.css">
@@ -38,7 +38,7 @@
                     <a href="/">Templates</a>
                     <!-- DROPDOWN MENU -->
                     <ul class="dropdown">
-                        <li><a href="/">Contract Templates</a></li>
+                        <li id="contTemp"><a href="./signin.html">Contract Templates</a></li>
                         <li><a href="/">ProposalTemplates</a></li>
                         <li><a href="/">InvoiceTemplates</a></li>
                         <li><a href="/">Agreement Templates</a></li>
@@ -74,7 +74,7 @@
             <p><span class="glyphicon glyphicon-ok"></span> Client CRM</p>
             <p><span class="glyphicon glyphicon-ok"></span> Expense Tracking</p>
             <p><span class="glyphicon glyphicon-ok"></span> Up to 5 Project Collaborators</p>
-            <button>START FREE</button>
+            <button>START PLAN</button>
         </div>
         <div>
             <h3>Professional</h3>
@@ -290,3 +290,18 @@
 </body>
 <script src="./Scripts/lowerSection.js"></script>
 </html>
+
+<script>
+    if(JSON.parse(localStorage.getItem("user"))){
+        let btn1 = document.querySelector('#navbutton>a>button');
+        let btn2 = document.querySelector('#navbutton>a+a>button');
+        let loginData = JSON.parse(localStorage.getItem("user"));
+        btn1.innerText = loginData.name;
+        console.log(loginData);
+        btn2.style.display = "none"
+        let a = document.querySelector('#navbutton>a');
+        a.href = "./hellobonsai.html"
+        let contTemp = document.querySelector('#contTemp>a');
+        contTemp.href = "./contractTemplates.html"
+    }
+</script>
